@@ -1,0 +1,32 @@
+<p>formulaire works!</p>
+<!-- src/app/user/user.component.html -->
+
+<div>
+    <form [formGroup]="profileForm">
+      <h2>Formulaire</h2>
+  
+      <label for="name">name: </label>
+      <input id="name" type="text" formControlName="name">
+  
+      <label for="email">email: </label>
+      <input id="email" type="text" formControlName="email">
+  
+      <label for="password">password: </label>
+      <input id="password" type="text" formControlName="password">
+  
+      <label for="adresse">adresse: </label>
+      <input id="adresse" type="text" formControlName="adresse">
+  
+      <p>Complete the form to enable button.</p>
+      <button type="submit" (click)="inscription()">Submit</button>
+    </form>
+  </div>
+  
+
+  <h3>{{newUser.name}}</h3>
+  
+  <h3>{{newUser.email}}</h3>
+
+  <h3>{{newUser.password}}</h3>
+
+  <h3>{{newUser.adresse}}</h3>
